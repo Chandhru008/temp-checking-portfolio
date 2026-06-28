@@ -1,5 +1,19 @@
-<!DOCTYPE html>
-<html>
+<html dir="ltr" lang="en">
+<head>
+
+</head>
+<body>
+  <nav aria-label='Main Navigation'>
+    <ul>
+      <li><a href='#main-content' title='Skip to main content'>Skip navigation</a></li>
+    </ul>
+  </nav>
+  <!-- rest of the page content here -->
+
+</body>
+</html>
+<html><head><title>About Us</title><link rel='stylesheet' href='styles.css'><script type='text/javascript' src='script.js'></script></head><body><h1>Nav Menu</h1><button id='skipNav' onmousedown='document.getElementById("mainContent").focus()'>Skip to main content</button><main id='mainContent'><p>Welcome to our website</p></main></body></html>
+
   <head>
     <meta charset="utf-8" />
     <link
@@ -289,21 +303,21 @@
       <div class="container1 mt-3">
         <h6>HTML</h6>
         <div class="progress">
-          <div class="progress-bar" style="width: 80%">80%</div>
+<div class="progress-bar" style="width: 80%;"></div>
         </div>
       </div>
 
       <div class="container1 mt-4">
         <h6>CSS</h6>
         <div class="progress">
-          <div class="progress-bar" style="width: 80%">80%</div>
+<div class="progress-bar" style="width: {{ width }}">{{ width }}%</div>
         </div>
       </div>
 
       <div class="container1 mt-3">
         <h6>C</h6>
         <div class="progress">
-          <div class="progress-bar" color="#000000E6" style="width: 70%">
+<div class='progress-bar' data-color='#000000E6' style='width: 70%;'></div>
             70%
           </div>
         </div>
@@ -312,13 +326,13 @@
       <div class="container1 mt-3">
         <h6>JAVASCRIPT</h6>
         <div class="progress">
-          <div class="progress-bar" style="width: 60%">60%</div>
+<div class="progress-bar" style="width: 60%" class="progress-bar">60%</div>
         </div>
       </div>
       <div class="container1 mt-3">
         <h6>PHP</h6>
         <div class="progress">
-          <div class="progress-bar" style="width: 60%">60%</div>
+<div class="progress-bar" style="width: var(--progress-width)">60%</div><style>body { --progress-width: 60%; }</style>
           <br />
         </div>
         <br />
@@ -327,4 +341,18 @@
       <hr />
     </div>
   </body>
+<html>
+<head>
+    <title>About</title>
+</head>
+<body>
+    <nav>
+        <a href="#" title="Skip to main content">Skip Navigation</a>
+    </nav>
+    <main>
+        <h1>About Us</h1>
+        
+    </main>
+</body>
 </html>
+
